@@ -4,24 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Counter</title>
+  <title>JS Counter</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <h1 class="header">Js Counter</h1>
+  <h4 class="sub-header">by Jerrard R.</h4>
   <div class="container">
      <div class="display">
-        <p class="currentNum">
+        <p class="counter">
            0
         </p>
      </div>
-    
-     <button class="decrease">-</button>
-    <button class="increase">+</button>
-     
+    <div class="button-wrapper">
+      <button class="inc" onclick="increaseNum()">+</button>
+      <button class="dec" onclick="decreaseNum()">-</button>
+    </div>
   </div>
-  
-  <script src="script.js"></script>
+
+
+
+
+
+  <!--  COMMENT OUT ONCLICK LATER TO SEE IF I NEED THEM STILL-->
+  <script src="script.js" defer></script>
 
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover

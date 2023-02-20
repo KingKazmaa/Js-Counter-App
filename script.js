@@ -1,19 +1,29 @@
+// create button/display variables here(?)
+const incButton = document.querySelector(".inc")
+const decButton = document.querySelector(".dec")
+const counter = document.querySelector('.counter')
+
 // start counter at 0
-const currentNum = 0
+let count = 0
 
+// update display
+const updateDisplay = () => counter.innerHTML = count
 
-// if the mouse is clicked
-if (Input.getKey(keyCode.Mouse0)) {
-  // execute increase or decrease
+// functions to increase/decrease counter + update display
+function increaseNum() {
+  count++
+  updateDisplay()
 }
+function decreaseNum() {
+  count--
+  updateDisplay()
+}
+/* Trying event handlers for each button
+incButton.onclick = increaseNum()
+decButton.onclick = decreaseNum() */
 
-//update the display every time a button is clicked
+// event handlers didnt work so maybe event listeners?
+incButton.addEventListener("click", increaseNum())
+decButton.addEventListener("click", decreaseNum())
 
-
-//increase counter (function)
-const increaseNum = () 
-  => currentNum += 1
-
-//decrease counter (function)
-const decreaseNum = () 
-  => currentNum -= 1
+// NOTE TO SELF: EVENT LISTENERS >> EVENT HANDLERS
