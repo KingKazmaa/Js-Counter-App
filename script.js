@@ -6,6 +6,9 @@ const counter = document.querySelector('.counter')
 // start counter at 0
 let count = 0
 
+// lets log each click just for fun actually
+let record = 0
+const updateRecord = () => console.log(record++ + ' clicks')
 // update display
 const updateDisplay = () => counter.innerHTML = count
 
@@ -13,10 +16,12 @@ const updateDisplay = () => counter.innerHTML = count
 function increaseNum() {
   count++
   updateDisplay()
+  updateRecord()
 }
 function decreaseNum() {
   count--
   updateDisplay()
+  updateRecord()
 }
 /* Trying event handlers for each button
 incButton.onclick = increaseNum()

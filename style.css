@@ -1,13 +1,45 @@
-* {
+* 
+{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-
-html {
+html, body 
+{
   height: 100%;
   width: 100%;
+  background-color: rgb(185, 176, 169);
 }
 
+h1, h4
+{
+  text-align: center;
+}
+
+h1 {
+  font-size: 5ch;  
+}
+
+.container
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 5ch;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display
+{
+  font-size: 5ch;
+  height: 5ch;
+  justify-self: center;
+}
+
+.button-wrapper
+{
+  justify-content: center;
+}
