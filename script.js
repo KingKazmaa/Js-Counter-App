@@ -12,7 +12,7 @@ const updateRecord = () => console.log(record++ + ' clicks')
 // update display
 const updateDisplay = () => counter.innerHTML = count
 
-// functions to increase/decrease counter + update display
+// functions to increase/decrease counter + update display and then log each time the user clicks a button
 function increaseNum() {
   count++
   updateDisplay()

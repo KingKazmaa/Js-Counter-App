@@ -42,4 +42,12 @@ h1 {
 .button-wrapper
 {
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inc, .dec
+{
+  
 }
